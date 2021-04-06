@@ -37,6 +37,7 @@ def valid(board, value, pos):
         if board[pos[0]][i] == value and pos[1] != i:
             return False
     
+    # Checking col
     for i in range(9):
         if board[i][pos[1]] == value and pos[1] != i:
             return False
